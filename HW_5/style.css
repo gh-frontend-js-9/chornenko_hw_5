@@ -1,0 +1,338 @@
+.block-list-information a, .block-portfolio a, .block-our-team a {
+  text-decoration: none;
+  color: #f0454c;
+  width: 10rem; }
+  .block-list-information a span, .block-portfolio a span, .block-our-team a span {
+    width: 2.75rem;
+    color: #f0454c;
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    text-transform: uppercase; }
+
+* {
+  margin: auto;
+  max-width: 85.625rem; }
+
+@media only screen and (max-width: 768px) {
+  * {
+    margin: auto;
+    overflow-x: hidden;
+    padding: 0px; } }
+.block-background-image {
+  height: 66.063rem;
+  background-image: url(img/background-top.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+nav {
+  max-width: 65.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  nav li {
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 45px; }
+  nav li:nth-child(6) {
+    padding-left: 15px; }
+  nav li:first-child {
+    padding-left: 297px; }
+  nav a {
+    text-decoration: none;
+    color: #263742; }
+
+.block-nav-bttn-freelance {
+  width: 8.75rem;
+  background-color: #fa5c65;
+  border: none;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  padding-top: 43px;
+  padding-bottom: 14px;
+  margin: 0px 0px 0px 69px; }
+  .block-nav-bttn-freelance span {
+    width: 7rem;
+    height: 1.063rem;
+    color: #ffffff;
+    font-family: Domine;
+    font-size: 1.25rem;
+    font-weight: 700; }
+  .block-nav-bttn-freelance .block-style-point-black {
+    color: #314a5b; }
+
+.block-menu {
+  color: #263742;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 4.313rem;
+  text-transform: uppercase;
+  margin: 0px; }
+  .block-menu .fab {
+    color: red; }
+
+.block-menu-mobile {
+  display: none; }
+
+@media only screen and (max-width: 768px) {
+  .block-menu {
+    display: none; }
+
+  .mainmenubtn {
+    width: 8.75rem;
+    background-color: #fa5c65;
+    border: none;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    padding-top: 43px;
+    padding-bottom: 14px;
+    margin: 0px 0px 0px 69px;
+    opacity: 0.6; }
+    .mainmenubtn span {
+      width: 7rem;
+      height: 1.063rem;
+      color: #ffffff;
+      font-family: Domine;
+      font-size: 1.25rem;
+      font-weight: 700; }
+
+  .mainmenubtn:hover {
+    background-color: Transparent; }
+
+  .block-menu-mobile {
+    display: inline-block;
+    position: absolute;
+    right: 50px; }
+
+  .dropdown-child {
+    display: none;
+    background-color: #fa5c65;
+    opacity: 0.6;
+    min-width: 200px; }
+
+  .dropdown-child a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block; }
+
+  .block-menu-mobile:hover .dropdown-child {
+    display: block;
+    position: fixed; } }
+header h1 {
+  padding: 265px 642px 0px 218px;
+  margin: 0px;
+  color: #314a5b;
+  font-family: Montserrat;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.313rem;
+  text-transform: uppercase; }
+
+.block-style-point-red {
+  color: #fa5c65; }
+
+.block-header-text {
+  width: 27.188rem;
+  color: #314a5b;
+  font-family: "Open Sans";
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 2.522rem;
+  padding: 26px 747px 41px 220px; }
+
+.block-header-bttn-readmore {
+  width: 10.688rem;
+  height: 4rem;
+  background-color: #fa5c65;
+  background-color: #fa5c65;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 41px 0px 0px 219px; }
+  .block-header-bttn-readmore span {
+    width: 5.438rem;
+    height: 0.75rem;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 0.938rem;
+    font-weight: 700;
+    line-height: 3.024rem;
+    text-transform: uppercase; }
+
+@media only screen and (max-width: 768px) {
+  header h1 {
+    padding-left: 1rem; }
+  header .block-header-text {
+    padding-left: 1rem; }
+
+  .block-header-bttn-readmore {
+    opacity: 0.6;
+    margin-left: 1rem; }
+
+  .block-nav-bttn-freelance {
+    opacity: 0.6; } }
+.block-list-information {
+  display: grid;
+  grid-template-columns: 320px 320px 320px;
+  padding: 82px 0px 0px 219px; }
+  .block-list-information h5 {
+    color: #465065;
+    font-family: Montserrat;
+    font-size: 1.625rem;
+    font-weight: 700;
+    line-height: 1.625rem;
+    text-transform: uppercase;
+    padding-bottom: 24px; }
+  .block-list-information p {
+    color: #9aa0ab;
+    font-family: "Open Sans";
+    font-size: 0.938rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+    padding-bottom: 29px; }
+  .block-list-information .fas {
+    color: red; }
+  .block-list-information div {
+    padding-right: 63px; }
+
+@media only screen and (max-width: 768px) {
+  .block-list-information {
+    display: grid;
+    grid-template-rows: 17.063rem 18.063rem 18.063rem;
+    grid-template-columns: 17.063rem;
+    padding: 30vw; } }
+.block-portfolio {
+  display: grid;
+  grid-template-columns: 548px 596px; }
+  .block-portfolio div {
+    padding: 104px 0px 0px 162px; }
+  .block-portfolio div:first-child {
+    padding-left: 219px; }
+  .block-portfolio .block-portfolio:nth-child(2) {
+    padding-top: 124px; }
+  .block-portfolio .fas {
+    color: red; }
+
+.block-portfolio-information {
+  margin-top: 0px; }
+  .block-portfolio-information h2 {
+    color: #314a5b;
+    font-family: Montserrat;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.875rem;
+    text-transform: uppercase;
+    padding: 0px 0px 17px 0px; }
+  .block-portfolio-information .block-span-portfolio {
+    color: #314a5b;
+    font-family: "Open Sans";
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0px; }
+  .block-portfolio-information p {
+    color: #9aa0ab;
+    font-family: "Open Sans";
+    font-size: 0.938rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+    padding: 0px 0px 45px 0px;
+    white-space: pre-line; }
+
+@media only screen and (max-width: 768px) {
+  .block-portfolio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 440px 474px;
+    padding: 0px;
+    margin: 0px; } }
+.block-our-team {
+  padding: 105px 0px 0px 219px; }
+  .block-our-team h3 {
+    color: #314a5b;
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 3.366rem;
+    text-transform: uppercase; }
+  .block-our-team .fas {
+    color: red; }
+
+.block-header-txt-our-team {
+  color: #9aa0ab;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-weight: 400; }
+
+.block-our-team-inform {
+  display: grid;
+  grid-template-columns: 140px 179px 140px 179px 140px 179px;
+  padding: 40px 228px 91px 0px;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch; }
+  .block-our-team-inform div {
+    margin-right: 50px; }
+  .block-our-team-inform h4 {
+    width: 9.375rem;
+    color: #314a5b;
+    font-family: Montserrat;
+    font-size: 1.375rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-bottom: 11px; }
+  .block-our-team-inform span {
+    width: 6.188rem;
+    color: #f0454c;
+    font-family: "Open Sans";
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem; }
+  .block-our-team-inform p {
+    width: 9.375rem;
+    color: #9aa0ab;
+    font-family: "Open Sans";
+    font-size: 0.875rem;
+    font-weight: 400;
+    padding-top: 14px; }
+
+.block-our-team a {
+  padding-left: 877px; }
+
+@media only screen and (max-width: 768px) {
+  .block-our-team {
+    padding: 30vw; }
+
+  .block-our-team-inform {
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 140px 174px 140px 184px 140px 183px;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch; } }
+.block-footer-information img {
+  padding-left: 219px;
+  padding-top: 62px; }
+
+.block-list-icon-network {
+  padding-left: 219px; }
+  .block-list-icon-network ul {
+    display: block; }
+  .block-list-icon-network li {
+    list-style-type: none;
+    display: inline-block;
+    width: 1.25rem; }
+  .block-list-icon-network li:last-child {
+    width: 27.813rem;
+    padding-left: 521px; }
+  .block-list-icon-network .fab {
+    color: #b9c0c6;
+    font-size: 1.125rem; }
+  .block-list-icon-network span {
+    width: 17.813rem;
+    color: #b9c0c6;
+    font-family: "Open Sans";
+    font-size: 0.813rem;
+    font-weight: 400;
+    line-height: 3.75rem; }
+
+/*# sourceMappingURL=style.css.map */
