@@ -3,18 +3,19 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="normalize.css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/2b008ac55f.js" crossorigin="anonymous"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
 	<title>Freelancer</title>
+	<link rel="stylesheet" href="style.scss">
 </head>
 <body>
 
-<div class="block-background-image">
+<div class="block-background-image-top">
 	<nav>
 		<button class="block-nav-bttn-freelance">
-			<span>Freelancer<span class="block-style-point-black">.</span></span>
+			<span>Freelancer<span class="text-style-point-black">.</span></span>
 		</button>
 		<ul class="block-menu">
 			<li>
@@ -37,7 +38,7 @@
 			</li>
 		</ul>
 		<div class="block-menu-mobile">
-  			<button class="mainmenubtn"><span>Menu</span></button>
+  			<button class="btn-main-menu"><span>Menu</span></button>
   		 		<div class="dropdown-child">
    			 		<a href="#">About</a>
     				<a href="#">Work</a>
@@ -46,9 +47,10 @@
   				</div></div>
 	</nav>
 		<header>
-		<h1>intelligence is nothing without ambition<span class="block-style-point-red">.</span></h1>
+		<h1>intelligence is nothing without ambition<span class="text-style-point-red">.</span></h1>
 		<span class="block-header-text">We’re small but impressive creative agency</span>
-		<button class="block-header-bttn-readmore"><span>Read More</span></button>
+		<div><button class="block-header-bttn-readmore"><span>Read More</span></button></div>
+
 		</header>
 </div>
 
@@ -57,17 +59,17 @@
 		<div>
 			<h5>Peace<br> of Mind.</h5>
 			<p>You’re safe with us. The privacy and security of your financial information is our top priority.</p>
-			<a href="#"><span>More <i class="fas fa-arrow-right"></i></span></a>
+			<a class="bttn-arrow" href="#"><span>More <i class="fas fa-arrow-right"></i></span></a>
 		</div>
 		<div>
 			<h5>Free.<br> Actually free</h5>
 			<p>No more pricing grids. No more fine print. Sending and receiving cash is free without gimmicks.</p>
-			<a href="#"><span>More <i class="fas fa-arrow-right"></i></span></a>	
+			<a class="bttn-arrow" href="#"><span>More <i class="fas fa-arrow-right"></i></span></a>	
 		</div>
 		<div>
 			<h5>Simple<br> payments.</h5>
 			<p>The same debit card you use to buy coffee lets deposit money straight to your bank account.</p>
-			<a href="#"><span>More <i class="fas fa-arrow-right"></i></span></a>
+			<a class="bttn-arrow" href="#"><span>More <i class="fas fa-arrow-right"></i></span></a>
 		</div>
 	
 		
@@ -76,10 +78,10 @@
 	</section>
 	<section class="block-portfolio">
 		<div class="block-portfolio-picture">
-			<img src="img/MacBookPicture.png" alt="leptop">
+			<img src="img/MacBookPicture.png" alt="laptop">
 		</div>
 			<div class="block-portfolio-information">
-				<h2>portfolio<span class="block-style-point-red">.</span></h2> 
+				<h2>portfolio<span class="text-style-point-red">.</span></h2>
 				<span class="block-span-portfolio">We are small, but strong team</span>
 				<p>
 				No more pricing grids. No more fine print.
@@ -87,10 +89,12 @@
 				
 				The same debit card you use to buy coffee lets deposit money straight to your bank account.
 				</p>
-				<a href="#"><span>More <i class="fas fa-arrow-right"></i></span></a>
+				<a class="bttn-arrow" href="#"><span>More <i class="fas fa-arrow-right"></i></span></a>
 			</div>
 		
 	</section>
+
+
 
 	<section class="block-our-team">
 		<h3>our team.</h3>
@@ -121,7 +125,7 @@
 		
 		</div>
 		
-		<a href="#"><span>More<i class="fas fa-arrow-right"></i></span></a>
+		<a class="bttn-arrow" href="#"><span>More<i class="fas fa-arrow-right"></i></span></a>
 
 		
 	</section>
@@ -144,7 +148,7 @@
 		</li>
 		<li><span>© Freelancer - Designed by Wojtek Kwiatkowski</span></li>
 	</ul>
-	
+	<div><span class="footer-text-mobile">© Freelancer - Designed by Wojtek Kwiatkowski</span></div>
 </footer>
 </body>
 </html>

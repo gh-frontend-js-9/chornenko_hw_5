@@ -5,7 +5,6 @@ $arrow-color:red;
 		text-decoration: none;
 		color: #f0454c;
 		width: 10rem;
-
 		span {
 			width: 2.75rem;
 			color: #f0454c;
@@ -15,30 +14,28 @@ $arrow-color:red;
 			line-height: 1.25rem;
 			text-transform: uppercase;
 			}}
-
 * {
 	margin: auto;
 	max-width: $width-comp;
-	
+
+		a:hover {
+		opacity: 0.6;
+		}
 }
 
-
 @media only screen and (max-width : 768px)  {
-	
 	* {
 	margin: auto;
 	overflow-x: hidden;
 	padding: 0px;
-
-
 	}
 }
-.block-background-image {
+.block-background-image-top {
 	
 	height: 66.063rem;
 	background-image: url(img/background-top.png);
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: left;
 }
 nav {
 	max-width: 65.75rem;
@@ -49,20 +46,16 @@ nav {
 			display: inline-block;
 			padding-left: 45px;
 		}
-
 		li:nth-child(6) {
 			padding-left: 15px;
 		}
-
 		li:first-child {
 			padding-left: 297px;
 		}
-
 		a {
 			text-decoration: none;
 			color: #263742;
 	}
-		
 }
 
 .block-nav-bttn-freelance {
@@ -85,7 +78,7 @@ nav {
 		font-weight: 700;
 	}
 
-	.block-style-point-black {
+	.text-style-point-black {
 		color: #314a5b;
 		}
 }
@@ -111,13 +104,13 @@ nav {
 }
 
 
-@media only screen and (max-width : 768px)  {
+@media only screen and (max-width : 992px)  {
 
 .block-menu {
 		display: none;
 }
-.mainmenubtn {
-   width: 8.75rem;
+.btn-main-menu {
+    width: 8.75rem;
 	background-color: #fa5c65;
 	border:none;
 	border-bottom-right-radius: 0.5rem;
@@ -128,8 +121,6 @@ nav {
 	opacity: 0.6;
 
 	span {
-		width: 7rem;
-		height: 1.063rem;
 		color: #ffffff;
 		font-family: Domine;
 		font-size: 1.25rem;
@@ -137,7 +128,7 @@ nav {
 	}
   }
 
-.mainmenubtn:hover {
+.btn-main-menu:active {
     background-color: Transparent;
     }
     
@@ -165,12 +156,9 @@ nav {
 }
 }
 
-
-
 header h1 {
 	padding: 265px 642px 0px 218px;
 	margin: 0px;
-	
 	color: #314a5b;
 	font-family: Montserrat;
 	font-size: 3rem;
@@ -179,34 +167,29 @@ header h1 {
 	text-transform: uppercase;
 	}
 
-.block-style-point-red {
+.text-style-point-red {
 	 color: #fa5c65;
 	}
 	
 .block-header-text {
-	width: 27.188rem;
+	
 	color: #314a5b;
 	font-family: "Open Sans";
 	font-size: 1.25rem;
 	font-weight: 400;
-	line-height: 2.522rem;
-	padding: 26px 747px 41px 220px;
-	
+	padding: 26px 0px 41px 220px;
+
 }
 
 
 .block-header-bttn-readmore {
-
 	width: 10.688rem;
 	height: 4rem;
-	background-color: #fa5c65;
 	background-color: #fa5c65;
 	border:none;
 	border-radius: 0.5rem;
 	margin: 41px 0px 0px 219px;
-
 	span {
-
 		width: 5.438rem;
 		height: 0.75rem;
 		color: #ffffff;
@@ -218,16 +201,29 @@ header h1 {
 	}
 }
 
-@media only screen and (max-width : 768px)  {
+@media only screen and (max-width : 992px) {
 
-header {
- h1{
-	padding-left: 1rem;
+	.block-header-bttn-readmore {
+		opacity: 0.6;
+		margin-left: 1rem;
+	}
+
+	.block-nav-bttn-freelance {
+		opacity: 0.6;
+	}
+
+	header {
+
+		h1 {
+			padding-left: 0px;
+		}
+
+		.block-header-text {
+			padding-left: 0px;
+		}
+	}
 }
-.block-header-text {
-	padding-left: 1rem;
-}
-}
+@media only screen and (max-width : 768px)  {
 
 .block-header-bttn-readmore {
 	opacity: 0.6;
@@ -235,15 +231,12 @@ header {
 }
 
 .block-nav-bttn-freelance {
-	opacity: 0.6;
+	opacity: 0.6;}
 }
-}
-
 .block-list-information {
 	display: grid;
 	grid-template-columns: 320px 320px 320px; 
 	padding: 82px 0px 0px 219px;
-
 		h5 {
 			color: #465065;
 			font-family: Montserrat;
@@ -277,14 +270,23 @@ header {
 }
 
 
+@media only screen and (max-width: 992px) {
+	
+.block-list-information {
+	padding-left: 20vw;
+		display: grid;
+		grid-template-rows: 17.063rem 18.063rem ; 
+		grid-template-columns: 17.063rem 18.063rem;
+}
+}
+
 @media only screen and (max-width : 768px) {
 	
 	.block-list-information {
+	padding-left: 20vw;
 		display: grid;
 		grid-template-rows: 17.063rem 18.063rem 18.063rem; 
-		grid-template-columns: 17.063rem; 
-		padding: 30vw;
-
+		grid-template-columns: 17.063rem;
 }
 }
 
@@ -293,29 +295,20 @@ header {
 	grid-template-columns:548px 596px;
 		div{
 			padding: 104px 0px 0px 162px;
-
 			 }
 	 	div:first-child {
 		 	padding-left: 219px;
-		 
 			 }
-
-
-		
 	 	.block-portfolio:nth-child(2) {
 	 		padding-top: 124px;
 	 		}
-
 		a {
 			@extend %button-style-more;
-	
 			}
-
 		.fas {
 			color: $arrow-color;
 			}
 	}
-
 
 .block-portfolio-information{
 	margin-top: 0px;
@@ -335,11 +328,8 @@ header {
 			font-size: 1rem;
 			font-weight: 400;
 			padding: 0px;
-		
 		}
-
 		p {
-			
 			color: #9aa0ab;
 			font-family: "Open Sans";
 			font-size: 0.938rem;
@@ -347,21 +337,48 @@ header {
 			line-height: 1.375rem;
 			padding: 0px 0px 45px 0px;
 			white-space: pre-line;}
-
 	}
+
+@media only screen and (max-width : 992px) {
+
+	.block-portfolio {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 440px 474px ;
+		img {
+			display: none;
+		}
+		div:first-child {
+			width: 528px;
+			height: 301px;
+			background-image: url("img/comp.jpg");
+			background-repeat: no-repeat;
+		}
+	}
+}
 
 @media only screen and (max-width : 768px) {
 
-
 .block-portfolio {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 440px 474px ;
-	padding: 0px;
-	margin: 0px;
-	
+
+	div {
+		padding: 0px;
+		max-width: 20rem;
 	}
 
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	img {
+		display: none;
+	}
+	div:first-child {
+		width: 528px;
+		height: 301px;
+		background-image: url("img/comp.jpg");
+		background-repeat: no-repeat;
+	}
+	}
 	}
 
 .block-our-team {
@@ -375,18 +392,15 @@ header {
 			line-height: 3.366rem;
 			text-transform: uppercase;
 		}
-
 		a {
 			@extend %button-style-more;
 		}
-
 		.fas {
 			color: $arrow-color;
 		}
 		}
 
 .block-header-txt-our-team {
-		
 		color: #9aa0ab;
 		font-family: "Open Sans";
 		font-size: 1rem;
@@ -404,7 +418,6 @@ header {
 		}
 
 		h4 {
-			width: 9.375rem;
 			color: #314a5b;
 			font-family: Montserrat;
 			font-size: 1.375rem;
@@ -414,16 +427,14 @@ header {
 		}
 
 		span {
-			width: 6.188rem;
-			color: #f0454c;
+			color: #314a5b;
 			font-family: "Open Sans";
 			font-size: 0.875rem;
-			font-weight: 400;
+			font-weight: 700;
 			line-height: 1.25rem;
 		}
 
 		p {
-			width: 9.375rem;
 			color: #9aa0ab;
 			font-family: "Open Sans";
 			font-size: 0.875rem;
@@ -431,33 +442,48 @@ header {
 			padding-top: 14px;
 		}
 
-		
-		
-
 }
 .block-our-team a {
 	padding-left: 877px;
 
 }
+@media only screen and (max-width: 992px) {
+.block-our-team {
+	padding: 0px;}
 
-
-@media only screen and (max-width : 768px) {
-
+.block-our-team-inform {
+		display: grid;
+		grid-template-columns: 140px 174px 140px 184px;
+		grid-template-rows:  140px 140px;
+}
+}
+@media only screen and (max-width : 992px) {
 	.block-our-team {
-		padding: 30vw;
+		padding-left: 20vw;
+	}
+	.block-our-team-inform {
+
+		display: grid;
+		grid-template-columns: 140px 183px 140px 184px;
+		grid-template-rows: 140px 174px;
+	}
+}
+@media only screen and (max-width : 768px) {
+.block-our-team {
+	padding-left: 20vw;
 }
 	.block-our-team-inform {
-	
-		display: grid;
-		grid-template-columns: 200px;
-		grid-template-rows: 140px 174px 140px 184px 140px 183px;
-		align-content: stretch;
 
+		display: grid;
+		grid-template-columns: 140px 183px;
+		grid-template-rows: 160px 194px;
+		p{
+			height: 5rem;
+		}
 }
 }
 
 .block-footer-information {
-	
 	img {
 		padding-left: 219px;
 		padding-top:62px;
@@ -466,42 +492,53 @@ header {
 
 .block-list-icon-network {
 	padding-left: 219px;
-
 		ul {
 			display:block;
-
 		}
-
-
 		li {
 			list-style-type: none;
 			display: inline-block;
 			width: 1.25rem;
-			
-
-
 		}
 		li:last-child {
 			width: 27.813rem;
-			
 			padding-left:521px;
-
 		}
-
-		
 		.fab {
 			color: #b9c0c6;
 			font-size: 1.125rem;
-		
-
 		}
 		span {
 			width: 17.813rem;
-			
 			color: #b9c0c6;
 			font-family: "Open Sans";
 			font-size: 0.813rem;
 			font-weight: 400;
 			line-height: 3.75rem;
 		}
+}
+.footer-text-mobile {
+	display: none;
+}
+@media only screen and (max-width: 992px)  {
+	.block-footer-information {
+		padding: 0px;
+	}
+
+}
+
+@media only screen and (max-width: 768px)  {
+	.block-list-icon-network {
+	display: none;
+	}
+	.footer-text-mobile {
+		padding-left: 20vw;
+		display: block;
+		color: #b9c0c6;
+		font-family: "Open Sans";
+		font-size: 0.813rem;
+		font-weight: 400;
+		line-height: 3.75rem;
+	}
+
 }
